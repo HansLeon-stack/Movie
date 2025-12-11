@@ -1,16 +1,58 @@
-# React + Vite
+# 📽️ Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a movie application that allows users to search movies, see what trending right now and rating of it's movies. The application may include features like movie listings, and external API integration (e.g., TMDB).
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎬 Browse movies </br>
+🔍 Search for movies by title </br>
+⭐ Popular & Recommended Movies
+📅 View release date and ratings </br>
+📡 API integration for movie data
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- HTML5
+- CSS/Tailwind
+- JavaScript (ES6+)
+- TMDB API
+- Appwrite Database
 
-## Expanding the ESLint configuration
+## Preview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<img width="1896" height="935" alt="image" src="https://github.com/user-attachments/assets/5647552d-bce2-44cf-a151-8ab86def4c91" />
+
+## Installation
+
+1. Clone the repository:
+```
+git clone https://github.com/HansLeon-stack/Movie.git
+```
+
+2. Navigate into the project directory:
+```
+cd Movie
+```
+
+3. Setup environment variables
+```
+API_KEY=your_api_key_here
+VITE_APPWRITE_PROJECT_ID="From Appwrite"
+VITE_APPWRITE_ENDPOINT="From Appwrite"
+VITE_APPWRITE_DATABASE_ID="From Appwrite"
+VITE_APPWRITE_TABLE_ID="From Appwrite"
+```
+
+4. Install dependencies:
+```
+npm install
+```
+
+5. Run the development server:
+```
+npm run dev
+```
+
+The Trending Movies feature is currently not working.
+This issue occurs due to an error in the backend (Appwrite Database) that handles search logging and ranking.
